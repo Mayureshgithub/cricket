@@ -9,9 +9,9 @@ pipeline {
                 git credentialsId: 'test', url: 'git@github.com:Mayureshgithub/Mayureshgithub.git'
             }
         }
-       stage("Build"){
+       stage("Builds"){
             steps {
-               sh 'mvn clean package'
+               sh 'mvn clean package"
             }
          }
     }
