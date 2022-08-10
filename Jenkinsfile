@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh '''
                 mvn clean package
-                tar -cvf $JOB_BASE_NAME-$BUILD_ID.tar **/**.war 
+               
                 '''    
             }
          }
