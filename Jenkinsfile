@@ -11,9 +11,7 @@ pipeline {
         }
        stage("Build"){
             steps {
-              dir("/../.."){
-  mvn clean test
-}   
+               sh 'mvn clean package'
             }
          }
     }
